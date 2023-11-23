@@ -1,0 +1,287 @@
+.sobreContainer {
+    width: 100%;
+    height: 40.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    position: relative;
+
+    background: url('https://s3-alpha-sig.figma.com/img/c0b2/048b/0031032803a46dcee8b7439a323a3667?Expires=1701648000&Signature=GNMi2y0K2CTRz38aC4pF6gh00prCMxuO6~1Naq7V4Nr6mrC7RB2lR0JTp928cfE0Sbui2~ksar0Q23F0IaChEukzqmJUkcuSSk2KybZbjxY~MoOY0kF~pOPBimhxFug4F4x0b~QCafsmQB5MPSUbCt3ut5zBVFlVJJLg6H2Oq1kIYOatBVuDhHSCDWEijmiFzGnkZsVeB202nR5Uj~gjYcOGJoR~SErMPc-~UWyphjFjddqYZ4YTclQs9sPe8CL3Zht1g~uQC8~dAU5FimIetGCbWkELEOtVlVE6~FhV1TVjuKXMXLMBTNc~rA2H6IrPB-gOsnl8wVk8fthG8VKs-w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4') no-repeat center/100%;
+}
+
+.sobreContainer .contentText {
+    width: 60.75rem;
+}
+
+.contentText .textPrincipal {
+    color: var(--white);
+    text-align: center;
+    font-family: Pragmatica;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.iconScroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    gap: 0.5rem;
+
+    font-family: Pragmatica;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.iconScroll svg {
+    animation : swipefloating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes swipefloating {
+    0% {
+      transform: translateY(-2px) ;
+    }
+    20% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+}
+
+.textGreen {
+    color: #03FF7F;
+    font-family: Pragmatica;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.squadSobreImgRight {
+    position: absolute;
+    right: 0;
+    bottom: -90px;
+}
+
+.squadSobreImgLeft {
+    position: absolute;
+    width: 27.39413rem;
+    height: 39.99725rem;
+    left: 0;
+    bottom: -140px;
+}
+
+
+/*=============================================================*/
+
+.empresasParceiras {
+    width: 100%;
+    height: 40.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.empresasParceiras .contentText {
+    color: var(--white);
+    text-align: center;
+    font-family: Degular;
+    font-size: 3.375rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+
+}
+
+.empresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobreRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12rem;
+}
+
+.sobreRow img{
+    width: 150px;
+}
+
+
+
+
+.tempoNoMercadoContainer {
+    width: 100%;
+    height: 70.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2rem;
+    padding-top: 10%;
+}
+
+.row {
+    display: flex;
+    padding: 0% 10%;
+}
+
+
+.nossaHistoria span {
+    color: var(--white);
+    font-family: Degular;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.23625rem;
+    text-transform: uppercase;
+}
+
+
+.tempoNoMercadoContainer .textPrincipal {
+    font-family: Degular;
+    font-size: 3.375rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    background:  linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-bottom: 8%;
+}
+
+.tempoNoMercadoContainer .contentText {
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
+
+.filosofiaPremiumContainer {
+    width: 100%;
+    height: 40.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2rem;
+    padding-top: 10%;
+}
+
+.filosofiaPremiumContainer .row {
+    display: flex;
+}
+
+.filosofiaPremiumContainer .textPrincipal {
+    font-family: Degular;
+    font-size: 3.375rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-bottom: 8%;
+
+}
+
+.filosofiaPremiumContainer .contentText {
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
+.midiaSociaisContainer {
+    width: 100%;
+    height: 40.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2rem;
+    padding-top: 10%;
+}
+
+.textHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    padding: 4% 0%;
+
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.textLineHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 0.25rem;
+    flex-shrink: 0;
+
+    background: url('../../assets/line-purple-img.svg'), lightgray 0px -327.161px / 100% 10652.613% no-repeat;
+}
+
+.rowIcons {
+    display: flex;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.5s;
+}
+
+.rowIcons img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+
+}
+

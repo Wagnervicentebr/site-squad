@@ -1,0 +1,556 @@
+
+/*===========================HOME============================================*/
+.homeContainer {
+    display: flex;
+
+    width: 100%;
+    height: 40.375rem;
+    object-fit: cover;
+
+    background: url('../assets/capa-membros-squad.svg') no-repeat center/100%;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2% 3%;
+}
+
+.socialMediaGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.socialMediaGroup img {
+    cursor: pointer;
+    transition: transform .5s;;
+}
+
+.socialMediaGroup img:hover {
+    transform: scale(1.5);
+}
+
+.lineSocialMedia {
+    width: 0.0625rem;
+    height: 12.5625rem;
+    background: #02FF85;
+}
+.iconStar {
+    padding-top: 4%;
+    padding-left: 2%;
+}
+
+.textContainer {
+    width: 100%;
+}
+.conentText {
+    padding: 2%;
+    font-size: 3rem;
+    font-family: Pragmatica;
+    font-weight: 300;
+    line-height: 3.5rem;
+    font-style: normal;
+}
+
+.conentTextGreen {
+    background: linear-gradient(45deg, rgba(2,255,133,1) 0%, rgba(25,255,10,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.conentText {
+    display: flex;
+    flex-direction: column;
+}
+
+.subContentText {
+    padding: 0% 2%;
+    width: 50%;
+}
+
+.btnHome {
+    display: flex;
+    padding-top: 4%;
+    gap: 1rem;
+}
+
+.btnHome button {
+    width: 11.1875rem;
+    height: 3.3125rem;
+    flex-shrink: 0;
+    border-radius: 3.625rem;
+    border: 1px solid #02FF85;
+
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: transform .6s;
+}
+
+.btnHome button:hover {
+    transform: scale(1.1);
+}
+
+.btnHomeGreen {
+    color: #000;
+    background: #02FF85;
+}
+
+.btnHomeTransparent {
+    color: #19FF0A;
+    background: transparent;
+}
+
+.scrollIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    gap: 0.5rem;
+
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    
+}
+
+.scrollIcon img {
+    animation : swipefloating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes swipefloating {
+    0% {
+      transform: translateY(-2px) ;
+    }
+    20% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+}
+
+/*===========================Serviços============================================*/
+
+.servicosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    background: url('../assets/capa-servicos.svg') no-repeat center/100%;
+    height: 36.875rem;
+    flex-shrink: 0;
+}
+
+.textHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    padding: 4% 0%;
+
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7725rem;
+    text-transform: uppercase;
+}
+
+.textLineHeader {
+    width: 75%;
+    height: 0.25rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #FFF 0%, #C8C8C8 50%, #FFF 100%);
+}
+
+.contentServico {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contentDescription {
+    width: 44.3125rem;
+    height: 12.6875rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btnService {
+    display: flex;
+    gap: 2rem;
+    padding: 3% 0%;
+
+}
+
+.btnService button {
+    width: 20.825rem;
+    height: 3.9375rem;
+    flex-shrink: 0;
+    border-radius: 3.625rem;
+    border: 1px solid var(--green-400);
+
+    text-align: center;
+    font-family: Degular;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0875rem;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.btnService button:hover {
+    transform: scale(1.1);
+}
+
+
+.btnServiceTranspatent {
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.btnServiceGreenGrandient{
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    color: #000;
+    
+}
+
+/*===========================Sobre Squad============================================*/
+
+.sobreSquadContainer {
+    width: 100%;
+    height: 79.4375rem;
+    display: flex;
+    flex-direction: column;
+
+    background: url('../assets/capa-sobre-squad.svg') no-repeat center/100%;
+
+}
+
+.sobreContentText {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 8% 2%;
+}
+
+.contentPrincipal {
+    width: 43.0625rem;
+    color: #F5F5F5;
+    font-family: Pragmatica;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.375rem; /* 134.375% */
+    padding: 2% 0%;
+}
+
+.subContent {
+    width: 47.625rem;
+    color: #FFF;
+    font-family: Degular;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2% 0%;
+}
+
+.textResultados {
+    color: #F5F5F5;
+    font-family: Pragmatica Extended;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 5.375rem;
+}
+
+
+/*===========================CLIENTES============================================*/
+
+.clientRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5rem;
+}
+
+.clientRow img {
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.clientRow img:hover {
+    transform: scale(1.3);
+}
+
+
+.squadNumber {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.squadNumberImgLeft {
+    position: absolute;
+    top: -200px;
+    bottom: 5px;
+    width: 27.39413rem;
+    height: 39.99725rem;
+    flex-shrink: 0;
+}
+
+.squadNumberImgRight {
+    position: absolute;
+    right: 0;
+}
+
+.metrics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0%;
+}
+
+.metricsRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0%;
+    gap: 1rem;
+}
+
+.metricsLine {
+    width: 17.75rem;
+    height: 0.0625rem;
+    flex-shrink: 0;
+    background: var(--white);
+}
+
+.contentInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.contentInfos:hover {
+    transform: scale(1.1);
+}
+
+.textContentInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.textHeaderInfos {
+    padding: 10% 0%;
+    color: #FFF;
+    font-family: Degular;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.23625rem;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.textPrincipalInfos {
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+}
+
+.contentInfos span {
+    color: #FFF;
+    font-family: Pragmatica Extended;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.875rem; /* 150% */
+    width: 150px;
+}
+
+/*===========================Como Contratar============================================*/
+
+.comoContratarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 42.5625rem;
+    object-fit: cover;
+    padding-top: 3%;
+}
+.comoContratarContent {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.imagemDesktop img {
+    width: 742px;
+    height: 465px;
+}
+
+.comoContratarContainer .contentText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9%;
+    padding-right: 3%;
+}
+
+.contentTextHeader {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.23625rem;
+    text-transform: uppercase;
+    padding: 3% 0%;
+}
+
+.contentTextSubtitle {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.saibaComoContratar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4% 0%;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.saibaComoContratar:hover {
+    transform: scale(1.1);
+}
+
+.saibaComoContratar span {
+    text-align: center;
+    font-family: Degular;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    background-image: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.saibaComoContratarLine {
+    width: 14%;
+    height: 1%;
+    border: 1px solid #02FF85;
+}
+
+/*===========================Como Contratar============================================*/
+
+
+.blogContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 42.5625rem;
+    object-fit: cover;
+}
+
+.blogRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blogTitle span{
+    color: var(--white);
+    font-family: Degular Display;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blogSubTitle {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.blogSubTitle:hover {
+    transform: scale(1.05);
+}
+/*===========================SLIDER============================================*/
+
+.sliderContainer {
+    padding: 5% 0%;
+}

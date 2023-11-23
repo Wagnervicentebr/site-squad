@@ -1,0 +1,7 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}

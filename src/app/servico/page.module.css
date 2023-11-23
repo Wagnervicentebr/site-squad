@@ -1,0 +1,189 @@
+.servicoContainer {
+    display: flex;
+
+    width: 100%;
+    height: 40.375rem;
+    object-fit: cover;
+
+    background: url('../../assets/capa-membros-squad.svg') no-repeat center/100%;
+}
+
+
+
+.iconArrow {
+    padding-top: 4%;
+}
+
+.textContainer {
+    width: 38.5625rem;
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.conentText {
+    padding: 2%;
+    font-size: 3rem;
+    font-family: Pragmatica;
+    font-weight: 300;
+    line-height: 3.5rem;
+    font-style: normal;
+}
+
+.conentTextGreen {
+    background: linear-gradient(45deg, rgba(2,255,133,1) 0%, rgba(25,255,10,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.conentText {
+    display: flex;
+    flex-direction: column;
+}
+
+/*=============================Alocação=============================*/
+
+.alocacaoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    background: url('../../assets/capa-alocacao.svg') no-repeat center/100%;
+    height: 40.875rem;
+    flex-shrink: 0;
+    padding-top: 5%;
+    gap: 3rem;
+}
+
+.textHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7725rem;
+    text-transform: uppercase;
+}
+
+.textLineHeader {
+    width: 75%;
+    height: 0.25rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #FFF 0%, #C8C8C8 50%, #FFF 100%);
+}
+
+.contentServico {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contentDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12.6875rem;
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Pragmatica;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contentSubDescription {
+    width: 70%;
+    color: var(--white);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.btnService {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+.btnService button {
+    
+    height: 4rem;
+    width: 20.825rem;
+    border-radius: 3.625rem;
+    border-radius: 1.125rem;
+    border: 1px solid var(--green-400);
+
+    text-align: center;
+    font-family: Degular;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0875rem;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.btnService button:hover {
+    transform: scale(1.1);
+}
+
+
+.btnServiceTranspatent {
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.btnServiceGreenGrandient{
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    color: #000;
+    
+}
+
+.btnArrowGroup {
+    display: flex;
+    gap: 1rem;
+    transition: transform 2s;
+}
+
+.btnArrowGroup button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btnArrowGreenTransparent {
+    background: transparent;
+    border: 1px solid var(--green-500);
+    color: var(--green-500);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.btnArrowGreen {
+    background: var(--green-500);;
+    border: 1px solid var(--green-500);
+    color: var(--black-100);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}

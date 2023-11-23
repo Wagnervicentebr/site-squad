@@ -1,0 +1,30 @@
+:root {
+  --green-400: #02FF85;
+  --green-500: #03FF7F;
+
+  --gray-100: #D1D1D1;
+
+  --white: #fff;
+
+  --black-100: #030303;
+  --black-000: #000;
+
+  --Gradient-1: #02FF85, #19FF0A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, input, textarea {
+  font-family: "Pragmatica" !important;
+  color: var(--white);
+  background: var(--black-000);
+}
+
+button {
+  font-family: "Degular" !important;
+  color: var(--white);
+}
+
