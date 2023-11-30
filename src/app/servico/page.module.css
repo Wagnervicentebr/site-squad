@@ -9,7 +9,6 @@
 }
 
 
-
 .iconArrow {
     padding-top: 4%;
 }
@@ -186,4 +185,181 @@
     width: 3rem;
     height: 3rem;
     border-radius: 8px;
+}
+
+/*===================================TOPICOS===================================*/
+
+.topicosContainer {
+    height: 80.4375rem;
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.topicosRow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5% 0%;
+}
+
+.topicosText span {
+    color: var(--white);
+    text-align: right;
+    font-family: Degular;
+    font-size: 3.375rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.underLineGreen {
+    width: 70.8125rem;
+    height: 0.0625rem;
+    background: #03FF7F;
+}
+
+.squadTopicosImgRight {
+    position: absolute;
+    right: 0;
+    top: -450px;
+}
+
+.squadTopicosImgLeft {
+    position: absolute;
+    width: 27.39413rem;
+    height: 39.99725rem;
+    left: 0;
+    bottom: -220px;
+}
+
+
+/*==============================Diferenciais====================================*/
+
+.diferenciaisContainer {
+    height: 60.4375rem;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+
+    background: url('../../assets/capa-diferenciais.svg') no-repeat center/100%;
+}
+.diferenciaisContainer .headerGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferenciaisContainer .headerGroup span{
+    width: 30%;
+    color: var(--White);
+    font-family: Degular;
+    font-size: 4.51563rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.96719rem; /* 110% */
+}
+
+.linePurple {
+    width: 40.9375rem;
+    height: 0.25rem;
+    flex-shrink: 0;
+
+    background: url('../../assets/line-purple.svg'), lightgray 0px -327.157px / 100% 10652.613% no-repeat;
+}
+
+.cardGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 3rem;
+}
+
+.cardTecnologia {
+    width: 15.53381rem;
+    height: 18.75rem;
+
+    background-color: transparent;
+}
+
+.cardTitle {
+    color: var(--White);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cardText {
+    color: var(--White);
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35469rem; /* 135.469% */
+}
+
+.cardImg {
+    padding-bottom: 20%;
+}
+
+.cardImg img {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.cardImg img:hover {
+    transform: scale(1.5);
+
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tecnologiasGroup {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tecnologiasGroup span {
+    color: var(--White);
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.7725rem;
+    text-transform: uppercase;
+}
+
+.listaTecnologias {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.listaTecnologias img {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+.listaTecnologias img:hover {
+    transform: scale(1.5);
 }

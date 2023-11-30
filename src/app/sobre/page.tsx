@@ -32,7 +32,7 @@ export default function Sobre() {
         <>
             <section className={styles.sobreContainer}>
                 <div className={styles.squadSobreImgLeft}>
-                <Image src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
+                    <Image src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
                 </div>
 
                 <div className={styles.contentText}>
@@ -45,7 +45,7 @@ export default function Sobre() {
                 </div>
 
                 <div className={styles.squadSobreImgRight}>
-                <Image src={EfeitoVerdeDireito}  alt='Efeito verde'/>
+                    <Image src={EfeitoVerdeDireito}  alt='Efeito verde'/>
                 </div>
             </section>
 

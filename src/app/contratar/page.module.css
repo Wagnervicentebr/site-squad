@@ -1,0 +1,295 @@
+.contratarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    width: 100%;
+    height: 40.375rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.contratarImgLeft {
+    position: absolute;
+    top: 0px;
+    bottom: 5px;
+    width: 100%;
+    height: 39.99725rem;
+    flex-shrink: 0;
+    z-index: -1;
+}
+
+.contratarImgRight {
+    position: absolute;
+    right: 0;
+    bottom: -500px;
+    z-index: -1;
+}
+
+.contratarContainer .titleContent  {
+    width: 53.5rem;
+    text-align: center;
+    font-family: Pragmatica;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.fontGradient {
+    background:linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scrollIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    
+}
+
+.scrollIcon img {
+    animation : swipefloating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes swipefloating {
+    0% {
+      transform: translateY(-2px) ;
+    }
+    20% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+}
+
+
+/*===================================Excelencia===============================*/
+
+.excelenciaContainer {
+    width: 100%;
+    height: 40.375rem;
+    object-fit: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.excelenciaContainer .contentText {
+    width: 38.9375rem;
+}
+
+.contentImg  {
+    width: 32.0625rem;
+    height: 37.5625rem;
+}
+
+.excelenciaContainer span {
+    color: var(--green-400);
+    font-family: Degular;
+    font-size: 3.125rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.excelenciaContainer .fontGreen {
+    font-style: normal;
+    font-weight: 800;
+}
+
+.excelenciaContainer .elipse1 {
+    position: absolute;
+    left: 15%;
+    top: 90%;
+    z-index: -1;
+}
+
+
+/*======================================Number Group=============================*/
+
+.stepNumberGroup {
+    display: flex;
+    height: 150.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+}
+
+.stepNumber {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.stepNumberBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.10119rem;
+    height: 6.22006rem;
+    flex-shrink: 0;
+
+    border-radius: 0.9375rem;
+    border: 0.563px solid var(--green-400);
+    background: linear-gradient(136deg, #2F2F2F -0.1%, #000 100.34%);
+    backdrop-filter: blur(2.813620090484619px);
+}
+
+.stepNumberBox span {
+    font-family: Degular;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stepNumberText {
+    width: 35.25rem;
+    height: 6.25rem;
+    color: var(--white);
+    text-align: center;
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    opacity: 0.75;
+}
+
+.stepNumberLine {
+    width: 0.125rem;
+    height: 11.25rem;
+    flex-shrink: 0;
+
+    background: var(--white);
+}
+
+.elipse2 {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.elipse3 {
+    z-index: -1;
+    position: absolute;
+    left: 2%;
+    top: 0;
+}
+
+.elipse4 {
+    z-index: -1;
+    position: absolute;
+    right: 10%;
+    top: -100px;
+}
+
+
+.elipse5 {
+    z-index: -1;
+    position: absolute;
+    left: 2%;
+    top: -300px;
+}
+
+.elipse6 {
+    z-index: -1;
+    position: absolute;
+    right: 10%;
+    bottom: -150px;
+}
+
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5% 0%;
+}
+
+.buttonGreen {
+    width: 19.5rem;
+    height: 3.3125rem;
+    flex-shrink: 0;
+
+    border-radius: 3.625rem;
+    background: var(--green-400);
+    border: 1px solid var(--green-400);
+
+    color: var(--black-000);
+    text-align: center;
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.11rem;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.buttonTransparent {
+    width: 19.5rem;
+    height: 3.3125rem;
+    flex-shrink: 0;
+    border-radius: 3.625rem;
+    border: 1px solid var(--green-400);
+    background: transparent;
+
+    color: #19FF0A;
+    text-align: center;
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.11rem;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.buttonTransparent:hover {
+    transform: scale(1.1);
+}
+
+.buttonGreen:hover {
+    transform: scale(1.1);
+}
