@@ -293,3 +293,62 @@
 .buttonGreen:hover {
     transform: scale(1.1);
 }
+
+
+@media (max-width: 1024px) {
+
+    .contratarContainer {
+        height: 100%;
+        padding: 20% 0%;
+    }
+
+    .titleContent {
+        font-size: 2rem;
+    }
+
+    .contratarContainer .titleContent  {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .excelenciaContainer {
+        flex-direction: column;
+        padding: 20% 0%;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .contentImg  img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .excelenciaContainer .contentText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .excelenciaContainer .contentText span{
+        font-size: 2rem;
+    }
+
+    .stepNumberText {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contratarImgRight {
+        right: -30px;
+    }
+}

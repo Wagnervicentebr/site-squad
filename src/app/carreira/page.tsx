@@ -21,34 +21,70 @@ const Carreira = () => {
                     </div>
                 </div>
                 <div>
-                    <form>
-                        <span>Preencha os dados abaixo para darmos o próximo passo!</span>
+                    <form className={styles.form}>
+                        <div  className={styles.formText}>
+                            <span>Preencha os dados abaixo para darmos o próximo passo!</span>
+                        </div>
                         <div className={styles.camposForm}>
-                            <div>
+                            <div  className={styles.formGroup}>
                                 <span>Nome</span>
                                 <input type="text" placeholder='Nome e sobrenome'/>
                             </div>
 
-                            <div>
+                            <div  className={styles.formGroup}>
                                 <span>Telefone</span>
                                 <input type="text" placeholder='( xx ) 9 9988-6633'/>
                             </div>
 
-                            <div>
+                            <div  className={styles.formGroup}>
                                 <span>E-mail</span>
                                 <input type="text" placeholder='Seu e-mail profissional'/>
                             </div>
 
-                            <div>
+                            <div  className={styles.formGroup}>
                                 <span>Mensagem</span>
-                                <textarea  placeholder='Nome e sobrenome'/>
+                                <textarea  placeholder='Resuma sua área de trabalho e qualificação.'> </textarea>
                             </div>
 
-                            <div>
-                                <button>Enviar</button>
-                            </div>
+                        </div>
+                        
+                        <div  className={styles.formBtn}>
+                            <button>Enviar</button>
                         </div>
                     </form>
+                    <div className={styles.curriculoContainer}>
+                        <span>Você também pode escrever um e-mail com seu currículo e enviar para: <span className={styles.email}>talentos@squadpremium.com.br</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className={styles.comoFuncionaContainer}>
+            <div className={styles.title}>
+                <span>Veja como funciona:</span>
+            </div>
+
+            <div className={styles.comoFuncionaContainerRow}>
+                <div className={styles.buttonTransparent}>
+                    <button><span>Recrutamento</span></button>
+                    <span>Aqui, com nossas naves de captura de talentos, vasculhamos o universo e abduzimos os melhores Aliens.</span>
+                </div>
+
+                <div className={styles.buttonTransparent}>
+                    <button><span>Bate-Papo</span></button>
+                    <span>É hora de conhecer melhor os candidatos, procurando entender se há fit cultural entre nós e nosso cliente.</span>
+                </div>
+            </div>
+
+            <div className={styles.comoFuncionaContainerRow}>
+                <div className={styles.buttonTransparent}>
+                    <button><span>Avaliação Técnica</span></button>
+                    <span>Em um comitê formado pelos Aliens de maior poderio técnico, o candidato passa por uma rigorosa prova de conhecimentos técnicos. Se ele possuir as skills necessárias, poderá se juntar à missão.</span>
+                </div>
+
+                <div className={styles.buttonTransparent}>
+                    <button><span>Contratação</span></button>
+                    <span>Hora de colher os louros da jornada, para o cliente e candidato(a). Nosso time de people fará a recepção do candidato e daqui em diante cliente e Alien, terão uma experiência inigualável.</span>
                 </div>
             </div>
         </section>

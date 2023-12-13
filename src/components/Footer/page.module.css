@@ -1,0 +1,121 @@
+#fullFooter{
+    background-color: #000; /*Apenas para ajudar na visualização*/
+}
+
+.copyright{
+    width: 100%;
+    opacity: 75%;
+    color: var(--whiteColor);
+    padding: 1.5rem 0;
+    
+    font-family: Degular;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.logo{
+    padding: 0 0 1.25rem 9rem;
+    width: 16.4375rem;
+    height: 4.54181rem;
+}
+
+.hr{
+    width: 63.0625rem;
+    border: 2px solid #FFF;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    width: 100%;
+    gap: 0.25rem;
+    max-width: 68rem;
+    padding-left: 7.5rem;
+    padding-right: 5rem;    
+}
+
+.gridpart{
+    position: relative;
+    top: 0;
+    text-wrap: nowrap;    
+}
+
+.gridpart ul{
+    list-style: none;
+    padding: 0;
+}
+
+.gridpart li{
+    font-family: Degular;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.875em;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #d1d1d1;
+    opacity: 75%;
+}
+
+.morespace{
+    padding: 0 1.5rem;
+}
+
+#inputdiv{
+    padding-left: 1.5rem;
+}
+
+#inputdiv input{
+    font-family: Degular;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: #8D8D8D;
+    opacity: 50%;
+    background: transparent;
+    width: 13.75rem;
+    border: none;
+    border-bottom: 1px solid #8D8D8D;
+    outline: none;
+}
+
+#lastcolumn{
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+}
+
+#buttons{
+    margin-top: 4rem;
+}
+
+#buttons button{
+    width: 12.0625rem;
+    height: 3.375rem;
+    color: #03FF7F;
+    border: 1px solid #03FF7F;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.title{
+    font-size: 1.25em;
+    color: #03FF7F;
+    margin: 0.5rem 0;
+
+    font-family: Pragmatica;
+    font-weight: 700;
+    line-height: 2.5em;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.textdecoration{
+    text-decoration: underline;
+    color: #d1d1d1;
+}

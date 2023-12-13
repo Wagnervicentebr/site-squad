@@ -21,20 +21,19 @@ import { ArrowRight } from 'phosphor-react';
 export default function Home() {
   return (
     <>
-
       {/*====================HOME============================= */}
         <section className={styles.homeContainer}>
 
           <div className={styles.socialMedia}>
             <div className={styles.lineSocialMedia}></div>
 
-           <div className={styles.socialMediaGroup}>
-              <Image src={instaIconHome} alt='intagram'/>
-              <Image src={faceIconHome} alt='facebook'/>
-              <Image src={linkedinIconHome} alt='linkedin'/>
-           </div>
+            <div className={styles.socialMediaGroup}>
+                <Image src={instaIconHome} alt='intagram'/>
+                <Image src={faceIconHome} alt='facebook'/>
+                <Image src={linkedinIconHome} alt='linkedin'/>
+            </div>
 
-           <div className={styles.lineSocialMedia}></div>
+            <div className={styles.lineSocialMedia}></div>
 
           </div>
 
@@ -109,18 +108,18 @@ export default function Home() {
 
           <div className={styles.squadNumber}>
             <div className={styles.squadNumberImgLeft}>
-              <Image src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
+              <Image width={400} src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
             </div>
 
             <div className={styles.metrics}>
-              <div>
+             
+              <div className={styles.textHeaderInfos}>
+                <p>squad em números</p>
               </div>
-
               <div  className={styles.metricsRow}>
+                
                 <div className={styles.contentInfos}>
-                  <div className={styles.textHeaderInfos}>
-                    <p>squad em números</p>
-                  </div>
+                 
                   <div className={styles.textContentInfos}>
                     <span className={styles.textPrincipalInfos}>1500+</span>
                     <span>Carreiras</span>
@@ -188,7 +187,7 @@ export default function Home() {
 
         {/*====================Sobre Squad============================= */}
 
-        <section className={styles.comoContratarContainer}>
+        {/* <section className={styles.comoContratarContainer}>
           <div className={styles.comoContratarContent}>
             <div className={styles.imagemDesktop}>
               <Image src={ImagemDesktopSquad} alt='Imagem desktop' />
@@ -206,11 +205,11 @@ export default function Home() {
             <span>Saiba como contratar</span>
             <div className={styles.saibaComoContratarLine}></div>
           </div>
-        </section>
+        </section> */}
 
         {/*====================Blog============================= */}
 
-        <section className={styles.blogContainer}>
+        {/* <section className={styles.blogContainer}>
           <div className={styles.blogRow}>
             <div className={styles.blogTitle}>
               <span>Blog</span>
@@ -224,7 +223,7 @@ export default function Home() {
           <div className={styles.sliderContainer}>
             <SliderComponent />
           </div>
-        </section>
+        </section> */}
 
     </>
   )

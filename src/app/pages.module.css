@@ -5,9 +5,8 @@
 
     width: 100%;
     height: 40.375rem;
-    object-fit: cover;
 
-    background: url('../assets/capa-membros-squad.svg') no-repeat center/100%;
+    background: url('../assets/capa-membros-squad.svg') no-repeat center;
 }
 
 .socialMedia {
@@ -331,11 +330,8 @@
 
 .squadNumberImgLeft {
     position: absolute;
-    top: -200px;
+    top: -150px;
     bottom: 5px;
-    width: 27.39413rem;
-    height: 39.99725rem;
-    flex-shrink: 0;
 }
 
 .squadNumberImgRight {
@@ -362,7 +358,6 @@
 .metricsLine {
     width: 17.75rem;
     height: 0.0625rem;
-    flex-shrink: 0;
     background: var(--white);
 }
 
@@ -391,7 +386,6 @@
 }
 
 .textHeaderInfos {
-    padding: 10% 0%;
     color: #FFF;
     font-family: Degular;
     font-size: 0.75rem;
@@ -400,7 +394,6 @@
     line-height: normal;
     letter-spacing: 0.23625rem;
     text-transform: uppercase;
-    width: 100%;
     margin-left: 10%;
 }
 
@@ -553,4 +546,121 @@
 
 .sliderContainer {
     padding: 5% 0%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .homeContainer {
+        background: url('../assets/capa-membros-squad.svg') no-repeat;
+        height: 100%;
+    }
+
+    .conentText {
+        padding: 5% 2%;
+    }
+
+   
+    /*======================Servico==============*/
+    .servicosContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        background: url('../assets/capa-servicos.svg') no-repeat;
+        height: 36.875rem;
+        flex-shrink: 0;
+    }
+
+    .contentDescription {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .btnService {
+        flex-direction: column;
+        padding: 0%;
+
+    }
+
+    .textLineHeader {
+        width: 40%;
+    }
+    
+    .btnHome button {
+        width: 40%;
+    }
+
+
+    /*===============================Sobre=======================*/
+    .sobreSquadContainer {
+        height: 100%;
+        gap: 8rem;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    
+    .sobreContentText {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .sobreContentText img {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        z-index: -1;
+    }
+
+    .clientRow {
+        flex-direction: column;
+    }
+
+    .squadNumber {
+        flex-direction: column;
+    }
+
+    .metricsRow {
+        flex-direction: column;
+        gap: 6rem;
+        padding: 20% 0%;
+    }
+
+
+    .metrics {
+        flex-direction: column;
+    }
+
+    .metricsLine {
+        transform: rotate(90deg);
+        width: 20%;
+    }
+
+    .contentPrincipal {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .textResultados {
+        font-size: 3rem;
+    }
+
+    .subContent {
+        width: 100%;
+    }
+
+    .squadNumberImgLeft {
+        position: absolute;
+        top: -100px;
+        bottom: 5px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .squadNumberImgRight {
+        position: absolute;
+        right: 0;
+        bottom: 300px;
+    }
+
 }

@@ -8,18 +8,214 @@
 .formContainer {
     display: flex;
     gap: 0.5rem;
+    padding: 10% 8%;
 }
 
 .imgContent {
     width: 36.625rem;
     height: 27.625rem;
+    padding: 10% 0%;
 }
 
 .textContent {
+    width: 36.1875rem;
+    height: 29.75rem;
+    flex-shrink: 0;
     color: var(--white);
     font-family: Pragmatica;
     font-size: 3rem;
     font-style: normal;
     font-weight: 300;
     line-height: 4rem; /* 133.333% */
+}
+
+.textGradient {
+    background:  linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pragmatica;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 34.9375rem;
+    height: 57.875rem;
+    flex-shrink: 0;
+
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(153deg, #333 0%, rgba(0, 0, 0, 0.70) 101.97%);
+    backdrop-filter: blur(40.5px);
+    padding: 10% 0%;
+}
+
+.formText {
+    width: 26.625rem;
+    color: var(--white);
+    font-family: Degular;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.camposForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 26.625rem;
+    height: 6.625rem;
+    flex-shrink: 0;
+    gap: .5rem;
+}
+
+.formGroup span {
+    color: var(--white);
+    font-family: Pragmatica Extended;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 160% */
+}
+
+.formGroup input {
+    width: 26.625rem;
+    height: 4.25rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    color: #F6F6F6;
+    font-family: Degular;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+    padding: 0% 2%;
+}
+
+.formGroup textarea {
+    width: 26.625rem;
+    height: 10.3125rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 2%;
+}
+
+.formBtn {
+    display: flex;
+    width: 100%;
+    height: 4.375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBtn button {
+    flex-shrink: 0;
+    width: 26.625rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #02FF85;    
+}
+.curriculoContainer {
+    padding: 10% 0%;
+}
+.curriculoContainer  span{
+    color: #FFF;
+    font-family: Degular;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem; /* 150% */
+}
+
+.email {
+    font-weight: 700 !important;
+}
+
+.comoFuncionaContainer {
+    width: 100%;
+    height: 60.375rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comoFuncionaContainerRow {
+    display: flex;
+    gap: 10rem;
+    height: 22rem;
+}
+
+.buttonTransparent {
+    width: 22.25rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0%;
+    gap: 3rem;
+
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    opacity: 0.75;
+}
+
+.buttonTransparent button {
+    width: 22.75rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border: 0.563px solid  #02FF85;
+    background: linear-gradient(136deg, #2F2F2F -0.1%, #000 100.34%);
+    backdrop-filter: blur(2.813620090484619px);
+}
+
+.buttonTransparent button span {
+    text-align: center;
+    font-family: Degular;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comoFuncionaContainer .title span{
+    color: #FFF;
+    text-align: center;
+    font-family: Degular;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem; /* 116.667% */
 }

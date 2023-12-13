@@ -75,7 +75,7 @@ const Servico = () => {
 
       <section className={styles.topicosContainer}>
         <div className={styles.squadTopicosImgLeft}>
-            <Image src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
+            <Image width={350} src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
         </div>
 
         <div className={styles.topicosRow}>
@@ -200,7 +200,7 @@ const Servico = () => {
             <Image src={iconScrum} alt='' />
           </div>
         </div>
-      </section>
+      </section> 
     </>
   )
 }

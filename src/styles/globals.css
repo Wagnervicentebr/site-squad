@@ -28,3 +28,7 @@ button {
   color: var(--white);
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
