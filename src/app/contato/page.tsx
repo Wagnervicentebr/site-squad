@@ -8,6 +8,7 @@ import ImagemLocalizacao from '../../assets/localizacao-verde.png'
 import ImagemEndereco from '../../assets/endereco-squad.png'
 import IconWhatsGreen from '../../assets/icon-whats-verde.png'
 import ImgSquadRedendo from '../../assets/icon-squad-redondo.svg'
+import ImgEfeitoVerdeRight from '../../assets/efeito-bola-verde-direita.svg'
 
 const Contato = () => {
   return (
@@ -26,6 +27,8 @@ const Contato = () => {
             </div>
 
             <div className={styles.headerRow}>
+                <div className={styles.retanguloVerde2}></div>
+
                 <div className={styles.informacoesContainer}>
                     <div className={styles.cardInformacoesTelefone}>
                         <div className={styles.cicleIcon}>
@@ -46,6 +49,7 @@ const Contato = () => {
                             <span>E-MAIL</span>
                             <p>contato@squadpremium.com.br</p>
                         </div>
+                        <div className={styles.retanguloVerde3}></div>
                     </div>
 
                     <div className={styles.cardInformacoesWhats}>
@@ -56,12 +60,15 @@ const Contato = () => {
                             <span>Whatsapp</span>
                             <p>Clique</p>
                         </div>
+                        <div className={styles.imgEfeitoVerdeRight}>
+                            <Image src={ImgEfeitoVerdeRight} alt='' />
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        {/* <section className={styles.formContainer}>
+        <section className={styles.formContainer}>
             <div className={styles.titleForm}>
                 <span>Ou preencha abaixo e aguarde nosso retorno.</span>
             </div>
@@ -106,7 +113,7 @@ const Contato = () => {
             <iframe className={styles.iframe} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2834071064053!2d-46.65924502466995!3d-23.558262778802014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e95a65aaaab%3A0x5682b6fafbe4a381!2sSquad%20Premium!5e0!3m2!1spt-BR!2sbr!4v1701980654263!5m2!1spt-BR!2sbr" width="800" height="600"   loading="lazy"></iframe>
             <Image src={ImagemLocalizacao} alt=''/>
             <Image className={styles.enderecoImg} src={ImagemEndereco} alt=''/>
-        </section> */}
+        </section>
     </>
   )
 }
