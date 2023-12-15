@@ -107,6 +107,10 @@
     height: 37.5625rem;
 }
 
+.contentImgMobile {
+    display: none;
+}
+
 .excelenciaContainer span {
     color: var(--green-400);
     font-family: Degular;
@@ -298,8 +302,14 @@
 @media (max-width: 1024px) {
 
     .contratarContainer {
-        height: 100%;
-        padding: 20% 0%;
+        padding: 10% 0%;
+        box-sizing: border-box;
+        height: 41.6875rem;
+        justify-content: flex-end;
+    }
+
+    .contratarImgLeft {
+        top: 30%;
     }
 
     .titleContent {
@@ -309,6 +319,14 @@
     .contratarContainer .titleContent  {
         font-size: 2rem;
         width: 100%;
+        box-sizing: border-box;
+        padding: 0% 15%;
+    
+    }
+
+    .stepNumber {
+        box-sizing: border-box;
+        padding: 0% 10%;
     }
 
     .excelenciaContainer {
@@ -320,19 +338,26 @@
     }
 
     .contentImg {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+       display: none;
     }
-    .contentImg  img{
-        width: 80%;
-        height: 80%;
+
+    .contentImgMobile {
+        display: flex;
+        width: 14.8125rem;
+        height: 17.35344rem;
+    }
+
+    .excelenciaContainer .elipse1 {
+        left: -10%;
+        top: 70%;
     }
 
     .excelenciaContainer .contentText {
+        font-size: 1.75rem;
         width: 100%;
-        text-align: center;
+        text-align: start;
+        box-sizing: border-box;
+        padding: 0% 10%;
     }
 
     .excelenciaContainer .contentText span{
@@ -349,6 +374,10 @@
     }
 
     .contratarImgRight {
-        right: -30px;
+        display: none;
+    }
+
+    .buttonGroup {
+        padding: 30% 0%;
     }
 }

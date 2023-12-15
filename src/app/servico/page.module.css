@@ -478,7 +478,7 @@
     }
 
     .linePurple {
-        width: 60%;
+        width: 50%;
     }
 
     .diferenciaisContainer {
@@ -517,5 +517,15 @@
         padding: 30% 0%;
         align-items: center;
         justify-content: center;
+    }
+
+    .listaTecnologias {
+        box-sizing: border-box;
+        padding: 0% 6%;
+    }
+
+    .listaTecnologias img {
+        width: 36px;
+        height: 36px;
     }
 }

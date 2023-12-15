@@ -10,10 +10,10 @@ const Carreira = () => {
         <section className={styles.carreiraContainer}>
             <div className={styles.formContainer}>
                 <div className={styles.textContent}>
-                    <div>
+                    <div className={styles.textContentTitle}>
                         <span>Todo talento <span className={styles.textGradient}>tech</span> pode <span className={styles.textGradient}>transformar</span> a própria realidade e a de muitas pessoas.</span>
                     </div>
-                    <div>
+                    <div className={styles.textContentSubTitle}>
                         <span>Quer fazer parte de um movimento maior?</span>
                     </div>
                     <div className={styles.imgContent}>

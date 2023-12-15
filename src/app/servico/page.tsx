@@ -208,7 +208,7 @@ const Servico = () => {
             <Image src={iconScrum} alt='' />
           </div>
         </div>
-      </section> 
+      </section>  
     </>
   )
 }

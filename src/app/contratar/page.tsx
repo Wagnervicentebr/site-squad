@@ -7,6 +7,7 @@ import ScrollIcon from '../../assets/mouse-home.svg'
 import EfeitoVerdeEsquedo from '../../assets/elipse-contratar-left.svg'
 import EfeitoVerdeDireito from '../../assets/elipse-contratar-right.svg'
 import LogoSquad from '../../assets/logo-squad-contratar.png'
+import LogoSquadMobile from '../../assets/logo-squad-contratar-mobile.png'
 
 import EfeitoVerdeVetor0 from '../../assets/contratar-elipses-verdes/Vector.png'
 import EfeitoVerdeVetor1 from '../../assets/contratar-elipses-verdes/Vector-1.png'
@@ -21,7 +22,7 @@ const Contratar = () => {
     <>
         <section className={styles.contratarContainer}>
             <div className={styles.contratarImgLeft}>
-              <Image src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
+              <Image width={350} src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
             </div>
 
             <div className={styles.titleContent}>
@@ -44,6 +45,10 @@ const Contratar = () => {
             </div>
             <div className={styles.contentImg}>
                 <Image src={LogoSquad} alt='' />
+            </div>
+
+            <div className={styles.contentImgMobile}>
+                <Image src={LogoSquadMobile} alt='' />
             </div>
 
             <div className={styles.elipse1}>
@@ -112,7 +117,7 @@ const Contratar = () => {
                 <button className={styles.buttonGreen}>CONTATO</button>
                 <button className={styles.buttonTransparent}>SERVIÇOS</button>
             </div>
-        </section>
+        </section> 
        
     </>
   )
