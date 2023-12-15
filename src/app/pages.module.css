@@ -281,6 +281,10 @@
     padding: 2% 0%;
 }
 
+.efeitoVerdeSobreMobile {
+    display: none;
+}
+
 .subContent {
     width: 47.625rem;
     color: #FFF;
@@ -323,10 +327,14 @@
 }
 
 
-.squadNumber {
+.squadNumberDesktop {
     display: flex;
     position: relative;
     width: 100%;
+}
+
+.squadNumberMobile {
+    display: none;
 }
 
 .squadNumberImgLeft {
@@ -549,16 +557,60 @@
     padding: 5% 0%;
 }
 
+.sliderMobileContainer {
+    display: none;
+}
+
 
 
 @media (max-width: 1024px) {
     .homeContainer {
         background: url('../assets/capa-membros-squad.svg') no-repeat;
         height: 100%;
+        flex-direction: column;
+        height: 60.5rem;
+        justify-content: space-between;
+    }
+
+    .iconStar {
+        display: none;
+    }
+    .socialMedia {
+        flex-direction: row;
+    }
+
+    .lineSocialMedia {
+        width: 45%;
+        height: 0.0625rem;
+    }
+
+    .socialMediaGroup {
+        flex-direction: row;
+        gap: 1.5rem;
+
     }
 
     .conentText {
-        padding: 5% 2%;
+        width: 100%;
+        font-size: 1.75rem;
+        padding: 36% 13% 5% 13%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .subContentText {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0% 12% 0% 12%;
+        box-sizing: border-box;
+    }
+
+    .btnHome {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 0%;
     }
 
    
@@ -569,13 +621,17 @@
         width: 100%;
     
         background: url('../assets/capa-servicos.svg') no-repeat;
-        height: 36.875rem;
+        height: 45.875rem;
         flex-shrink: 0;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 0% 9%;
     }
 
     .contentDescription {
         width: 100%;
         font-size: 2rem;
+        height: 10.6875rem;
     }
 
     .btnService {
@@ -585,39 +641,63 @@
     }
 
     .textLineHeader {
-        width: 40%;
+        display: none;
+    }
+
+    .textHeader {
+        justify-content: start;
+        font-size: 0.875rem;
+        padding: 8% 0%;
     }
     
     .btnHome button {
         width: 40%;
     }
 
+    .btnService button {
+        width: 100%;
+    }
+
+    .contentServico {
+        width: 100%;
+    }
+
 
     /*===============================Sobre=======================*/
+    .sobreContentText {
+        background: url('../assets/capa-sobre-squad.svg') no-repeat center/100%;
+    }
+
     .sobreSquadContainer {
+        width: 100%;
         height: 100%;
         gap: 8rem;
         flex: 1;
         flex-wrap: wrap;
+        background: none;
+        padding-top: 15%;
+        box-sizing: border-box;
     }
     
     .sobreContentText {
         flex-direction: column;
         position: relative;
+        padding: 12% 15% 0% 15%;
+        position: relative;
     }
 
-    .sobreContentText img {
+    .efeitoVerdeSobreMobile {
         position: absolute;
-        top: 10%;
-        left: 20%;
-        z-index: -1;
+        display: block;
+        top: -30%;
+        left: 0;
+    }
+
+    .logoSquadDesktop {
+        display: none;
     }
 
     .clientRow {
-        flex-direction: column;
-    }
-
-    .squadNumber {
         flex-direction: column;
     }
 
@@ -639,29 +719,150 @@
 
     .contentPrincipal {
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        box-sizing: border-box;
+        padding-top: 20%;
+        padding-bottom: 15%;
     }
 
     .textResultados {
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: 2.25rem;
     }
 
     .subContent {
         width: 100%;
+        font-size: 1.125rem;
     }
 
-    .squadNumberImgLeft {
-        position: absolute;
-        top: -100px;
-        bottom: 5px;
+    .squadNumberDesktop {
+        display: none;
+    }
+
+
+    .squadNumberMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         height: 100%;
-        flex-shrink: 0;
+        gap: 2rem;
     }
 
-    .squadNumberImgRight {
-        position: absolute;
-        right: 0;
-        bottom: 300px;
+    .squadNumberMobile .titleHeader {
+        width: 100%;
+        padding: 0% 10%;
+        box-sizing: border-box;
     }
 
+    .squadNumberMobile .titleHeader span{
+        color: #FFF;
+        font-family: Degular;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.23625rem;
+        text-transform: uppercase;        
+    }
+
+    .squadNumberMobile .contentNumber {
+        width: 100%;
+        display: flex;
+        padding: 0% 10%;
+        box-sizing: border-box;
+    }
+
+    .contentNumberRow {
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .contentNumberColumn {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contentNumberTitle span {
+        color: #FFF;
+        font-family: Degular;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .contentNumberSubTitle span {
+        color: #FFF;
+        font-family: Pragmatica Extended;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem; /* 128.571% */
+    }
+
+    .contentNumberLine {
+        width: 90%;
+        height: 0.0625rem;
+        background: #FFF;
+    }
+
+    .contentNumberLineContainer {
+        width: 100%;
+        padding: 5% 10%;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+    /*=======================Contratar=======================*/
+
+    .comoContratarContainer {
+        justify-content: flex-end;
+        height: 70.5625rem;
+    }
+
+    .imagemDesktop {
+        display: none;
+    }
+
+    .contentTextSubtitle {
+        font-size: 1.75rem;
+    }
+
+    .comoContratarContainer .contentText {
+        gap: 2rem;
+        box-sizing: border-box;
+        padding: 0% 15% 15% 15%;
+    }
+
+    .saibaComoContratarLine {
+        width: 45%;
+    }
+
+
+    /*====================Blog============================= */
+
+    .sliderContainer {
+        display: none;
+    }
+
+    .sliderMobileContainer {
+        padding: 5% 0%;
+        display: block;
+    }
+
+    .blogSubTitle {
+        display: none;
+    }
+
+    .blogContainer {
+        gap: 5rem;
+        padding-top: 15%;
+    }
 }

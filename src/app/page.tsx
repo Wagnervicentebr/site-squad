@@ -17,6 +17,7 @@ import EfeitoVerdeDireito from '../assets/efeito-bola-verde-direita.svg'
 import ImagemDesktopSquad from '../assets/capa-como-contratar.svg'
 import SliderComponent from '@/components/Slider';
 import { ArrowRight } from 'phosphor-react';
+import SliderMobileComponent from '@/components/SliderMobile';
 
 export default function Home() {
   return (
@@ -47,7 +48,9 @@ export default function Home() {
             </div>
 
             <div className={styles.subContentText}>
-              <span>Toda a evolução do mercado, condensada em líderes e talentos fora da curva. Estamos criando uma divisão entre o mercado comum e o que é PREMIUM.</span>
+              <div>
+                <span>Toda a evolução do mercado, condensada em líderes e talentos fora da curva. Estamos criando uma divisão entre o mercado comum e o que é PREMIUM.</span>
+              </div>
             </div>
 
             <div className={styles.btnHome}>
@@ -85,6 +88,9 @@ export default function Home() {
         {/*====================Sobre Squad============================= */}
         <section className={styles.sobreSquadContainer}>
           <div className={styles.sobreContentText}>
+            <div className={styles.efeitoVerdeSobreMobile}>
+              <Image width={400} src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
+            </div>
             <div>
               <div className={styles.contentPrincipal}>
                 <span>Acreditamos que a <span className={styles.textResultados}>os resultados</span> falam mais alto que tudo.</span>
@@ -93,7 +99,7 @@ export default function Home() {
                 <span>Nossos clientes confiam em nós para promover a transformação necessária dentro e fora dos seus territórios. Nossa missão é sempre conectar o que há de melhor em tecnologia com os objetivos das empresas que apoiamos.</span>
               </div>
             </div>
-            <div>
+            <div className={styles.logoSquadDesktop}>
               <Image src={SobreLogoSquad} alt='Logo Squad'/>
             </div>
           </div>
@@ -106,7 +112,7 @@ export default function Home() {
               <Image src={SonyLogo} alt='Logo Sony'/>
           </div>
 
-          <div className={styles.squadNumber}>
+          <div className={styles.squadNumberDesktop}>
             <div className={styles.squadNumberImgLeft}>
               <Image width={400} src={EfeitoVerdeEsquedo}  alt='Efeito verde'/>
             </div>
@@ -182,12 +188,97 @@ export default function Home() {
               <Image src={EfeitoVerdeDireito}  alt='Efeito verde'/>
             </div>
           </div>
+
+          <div className={styles.squadNumberMobile}>
+            <div className={styles.titleHeader}>
+              <span>Squad em números</span>
+            </div>
+
+            <div className={styles.contentNumber}>
+              <div className={styles.contentNumberRow}>
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>1500+</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Carreiras Transformadas</span>
+                   </div>
+                </div>
+
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>3,3%</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Turnover</span>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.contentNumberLineContainer}>
+              <div className={styles.contentNumberLine}></div>
+            </div>
+
+            <div className={styles.contentNumber}>
+              <div className={styles.contentNumberRow}>
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>70+</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Clientes Satisfeitos</span>
+                   </div>
+                </div>
+
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>98%</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Aprovação dos clientes</span>
+                   </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className={styles.contentNumberLineContainer}>
+              <div className={styles.contentNumberLine}></div>
+            </div>
+
+            <div className={styles.contentNumber}>
+              <div className={styles.contentNumberRow}>
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>10+</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Anos de mercado</span>
+                   </div>
+                </div>
+
+                <div className={styles.contentNumberColumn}>
+                   <div className={styles.contentNumberTitle}>
+                      <span>250+</span>
+                   </div>
+                   <div className={styles.contentNumberSubTitle}>
+                      <span>Projetos e missões tech</span>
+                   </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className={styles.contentNumberLineContainer}>
+              <div className={styles.contentNumberLine}></div>
+            </div>
+            
+          </div>
         </section>
 
 
         {/*====================Sobre Squad============================= */}
 
-        {/* <section className={styles.comoContratarContainer}>
+        <section className={styles.comoContratarContainer}>
           <div className={styles.comoContratarContent}>
             <div className={styles.imagemDesktop}>
               <Image src={ImagemDesktopSquad} alt='Imagem desktop' />
@@ -205,11 +296,11 @@ export default function Home() {
             <span>Saiba como contratar</span>
             <div className={styles.saibaComoContratarLine}></div>
           </div>
-        </section> */}
+        </section>
 
         {/*====================Blog============================= */}
 
-        {/* <section className={styles.blogContainer}>
+        <section className={styles.blogContainer}>
           <div className={styles.blogRow}>
             <div className={styles.blogTitle}>
               <span>Blog</span>
@@ -223,7 +314,11 @@ export default function Home() {
           <div className={styles.sliderContainer}>
             <SliderComponent />
           </div>
-        </section> */}
+
+          <div className={styles.sliderMobileContainer}>
+            <SliderMobileComponent />
+          </div>
+        </section>
 
     </>
   )

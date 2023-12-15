@@ -66,6 +66,14 @@ const Servico = () => {
           <div className={styles.contentSubDescription}>
             <span>Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, na estrutura do cliente sob responsabilidade de seus próprios gestores ou nossos gestores.</span>
           </div>
+          <div className={styles.btnArrowGroupMobile}>
+            <button className={styles.btnArrowGreenTransparent}>
+              <ArrowLeft size={24}/>
+            </button>
+            <button className={styles.btnArrowGreen}>
+              <ArrowRight size={24}/>
+            </button>
+          </div>
         </div>
 
         <div className={styles.btnService}>
@@ -80,7 +88,7 @@ const Servico = () => {
 
         <div className={styles.topicosRow}>
             <div className={styles.topicosText}>
-              <span>Codificação -</span>
+              <span>Codificação</span>
             </div>
             <div className={styles.underLineGreen}>
             </div>
@@ -88,7 +96,7 @@ const Servico = () => {
 
         <div className={styles.topicosRow}>
             <div className={styles.topicosText}>
-              <span>Banco de Dados -</span>
+              <span>Banco de Dados</span>
             </div>
             <div className={styles.underLineGreen}>
             </div>
@@ -96,7 +104,7 @@ const Servico = () => {
 
         <div className={styles.topicosRow}>
             <div className={styles.topicosText}>
-              <span>Infraestrutura -</span>
+              <span>Infraestrutura</span>
             </div>
             <div className={styles.underLineGreen}>
             </div>
@@ -104,7 +112,7 @@ const Servico = () => {
 
         <div className={styles.topicosRow}>
             <div className={styles.topicosText}>
-              <span>Integração -</span>
+              <span>Integração</span>
             </div>
             <div className={styles.underLineGreen}>
             </div>

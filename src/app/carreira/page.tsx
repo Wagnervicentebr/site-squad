@@ -20,7 +20,7 @@ const Carreira = () => {
                         <Image src={GlassCurve} alt=''/>
                     </div>
                 </div>
-                <div>
+                <div className={styles.formGroupContainer} >
                     <form className={styles.form}>
                         <div  className={styles.formText}>
                             <span>Preencha os dados abaixo para darmos o próximo passo!</span>

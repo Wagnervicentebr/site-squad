@@ -362,18 +362,44 @@
     transform: scale(1.5);
 }
 
+.btnArrowGroupMobile {
+    display: none;
+}
+
 
 @media (max-width: 1024px) {
 
 
     .servicoContainer {
 
-        height: 100%;
+        height: 60.6875rem;
         background: url('../../assets/capa-membros-squad.svg') no-repeat;
     }
 
+    .textContainer {
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 10% 15%;
+    }
+
+    .conentText {
+        font-size: 2rem;
+    }
+
+    .textHeader {
+        font-size: 0.75rem;
+    }
+
     .textLineHeader {
-        width: 40%;
+        width: 50%;
+        height: 0.1rem;
+    }
+
+    .btnArrowGroupMobile {
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+        justify-content: center;
     }
 
     .alocacaoContainer {
@@ -383,16 +409,23 @@
 
     .contentServico {
         flex-direction: column;
+        gap: 5rem;
     }
 
     .contentDescription {
         flex-direction: column;
         height: 100%;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
     .contentSubDescription {
+        font-size: 1.5rem;
         width: 100%;
         padding: 4% 0%;
+        box-sizing: border-box;
+    }
+
+    .btnArrowGroup {
+        display: none;
     }
 
     .btnArrowGroup {
@@ -410,9 +443,11 @@
     }
 
     .topicosContainer {
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-start;
         padding: 20% 0%;
+        gap: 2rem;
+        height: 50.4375rem;
     }
 
     .underLineGreen {
@@ -424,15 +459,26 @@
     }
 
     .squadTopicosImgLeft {
-        bottom: -100px;
+        top: 60%;
+        bottom: 0;
     }
 
     .squadTopicosImgRight {
-        top: -200px;
+        display: none;
+    }
+
+    .topicosRow {
+        padding: 5% 0% 5% 16%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .diferenciaisContainer .headerGroup {
+        justify-content: flex-start;
     }
 
     .linePurple {
-        width: 50%;
+        width: 60%;
     }
 
     .diferenciaisContainer {
@@ -441,8 +487,9 @@
     }
 
     .diferenciaisContainer .headerGroup span{
-
-        font-size: 3rem;
+        font-size: 2.25rem;
+        width: 100%;
+        line-height: 2.25rem;
     }
 
     .cardGroup {
