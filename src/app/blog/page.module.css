@@ -1,0 +1,568 @@
+.blogContainer {
+    width: 100%;
+    display: flex;
+}
+
+
+.blogCards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.blogCards .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blogCards .title span {
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4rem; /* 114.286% */
+    text-transform: uppercase;
+}
+
+.blogCards .line {
+    width: 55%;
+    background: #fff;
+    height: 0.125rem;
+}
+
+.cardsGroup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.card {
+    width: 45%;
+    height: 21.95338rem;
+    position: relative;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardImg{
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 2.07681rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.cardDescription {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 4%;
+    box-sizing: border-box;
+    gap: 0.5rem;
+}
+
+.cardDescription img{
+    width: 27px;
+    height: 27px;
+}
+
+.cardCateogry {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cardDescriptionText {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.infosLeft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.infosLeft {
+    padding: 5% 2%;
+    align-items: center;
+}
+
+.searchBlog {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    position: relative;
+}
+
+.searchBlog input {
+    width: 80%;
+    height: 3.25rem;
+    background: transparent;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    color: #F6F6F6;
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.875rem; /* 187.5% */
+    padding: 0% 4%;
+    box-sizing: border-box;
+}
+
+.searchBlog svg {
+    position: absolute;
+    right: 25%;
+    bottom: 40%;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.category span {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.375rem;
+    text-transform: uppercase;
+}
+
+.buttonCategory {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.btnGrop {
+    width: 50%;
+    position: relative;
+    padding: 2% 0%;
+    transition: transform 0.5s;
+}
+
+.btnGrop img {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+}
+
+.btnGrop button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.625rem;
+    border: 1px solid #404040;
+    width: 75%;
+    height: 1.5625rem;
+    color: #FFF;
+    font-family: Degular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnGrop:hover {
+    transform: scale(1.1);
+}
+
+.lastArticle {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.lastArticleTitle {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.375rem;
+    text-transform: uppercase;
+}
+
+.cardArticle {
+    display: flex;
+    width: 100%;
+    height: 4.875rem;
+    gap: 1.5rem;
+}
+
+.cardArticleImg {
+    width: 25%;
+}
+
+.cardArticle img {
+    height: 4.875rem;
+    width: 100%;
+    border-radius: 0.6875rem;
+}
+
+.cardArticleContent {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-family: Degular;
+    color: #FFF;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.contentDate {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.contentText {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.contentTextGreen {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+    background: linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btnPageGroup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6% 0%;
+    box-sizing: border-box;
+}
+
+.btnPageGroup button:hover {
+    background:linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    color: #000;
+    cursor: pointer;
+}
+
+.btnPrevNext {
+    position: relative;
+}
+
+.btnPrev {
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+
+.btnNext {
+    position: absolute;
+    top: 20%;
+    right: 6%;
+}
+
+.btnPrevNext button {
+    width: 6.8125rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: Degular;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btnNumbers {
+    display: flex;
+    gap: 1rem;
+    padding: 0% 2%;
+    box-sizing: border-box;
+}
+
+.btnNumbers button {
+    width: 24px;
+    height: 24px;
+
+    color: #FFF;
+    font-family: Degular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+.btnNumbers button:focus {
+    background:linear-gradient(94deg, #02FF85 0%, #19FF0A 100%);
+    color: #000;
+}
+
+
+.newLatterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10% 0% 15% 0%;
+    box-sizing: border-box;
+}
+
+.cardNewLatter {
+    width: 90%;
+    height: 100%;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(93deg, rgba(52, 52, 52, 0.90) 0%, rgba(26, 26, 26, 0.90) 100%);
+    padding: 3% 0%;
+}
+
+.cardNewLatterRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2% 0%;
+    box-sizing: border-box;
+}
+
+.cardNewLatterRow span {
+    color: #FFF;
+    font-family: Pragmatica;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.textBold {
+    font-weight: 700 !important;
+}
+
+.linePurple {
+    width: 30%;
+    height: 0.15rem;
+    flex-shrink: 0;
+
+    background: url('../../assets/line-purple.svg'), lightgray 0px -327.157px / 100% 10652.613% no-repeat;
+}
+
+.cardNewLatterRow input {
+    width: 60%;
+    height: 68px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: transparent;
+    color: #F6F6F6;
+    font-family: Degular;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.cardNewLatterRow button {
+    width: 20%;
+    height: 68px;
+    border-radius: 15px;
+    background: #02FF85;
+    color: #101010;
+    text-align: center;
+    font-family: Pragmatica Extended;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+}
+
+.elipse1 {
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #00FF87;
+    filter: blur(37.5px);
+    position: absolute;
+    z-index: -1;
+    bottom: 30%;
+    left: 0%;
+}
+
+.elipse2 {
+    border-radius: 9px;
+    background: #00FF87;
+    filter: blur(37.5px);
+    width: 97.327px;
+    height: 97.327px;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    z-index: -1;
+}
+
+.searchBlogMobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .blogContainer {
+        flex-direction: column;
+        padding: 5% 0%;
+        box-sizing: border-box;
+    }
+
+    .blogCards {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .blogCards .title span {
+        font-size: 2rem;
+    }
+
+    .blogCards .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blogCards .line {
+        width: 100%;
+    }
+
+    .searchBlogMobile {
+        width: 100%;
+        display: flex;
+        padding: 5%;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .searchBlogMobile input {
+        width: 100%;
+        height: 3.25rem;
+        background: transparent;
+        border-radius: 0.625rem;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+    
+        color: #F6F6F6;
+        font-family: Degular;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.875rem; /* 187.5% */
+        padding: 0% 4%;
+        box-sizing: border-box;
+    }
+
+    .cardsGroup {
+        gap: 2rem;
+    }
+    
+    .searchBlogMobile svg {
+        position: absolute;
+        right: 10%;
+        bottom: 35%;
+    }
+
+    .btnPageGroup {
+        display: none;
+    }
+
+    .infosLeft {
+        width: 100%;
+        padding: 10%;
+        box-sizing: border-box;
+    }
+
+    .searchBlog {
+        display: none;
+    }
+
+    .elipse2 {
+        display: none;
+    }
+
+    .elipse1 {
+        bottom: -30%;
+        left: 35%;
+    }
+
+    .cardNewLatterRow {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4% 0%;
+    }
+
+    .cardNewLatterRow span {
+        font-size: 2rem;
+    }
+
+    .cardNewLatterRow input {
+        width: 80%;
+    }
+
+    .cardNewLatterRow button {
+        width: 80%;
+    }
+
+    .linePurple {
+        display: none;
+    }
+}

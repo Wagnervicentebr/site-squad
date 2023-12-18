@@ -15,6 +15,7 @@ import SonyLogo from '../assets/sony-logo.svg'
 import EfeitoVerdeEsquedo from '../assets/efeito-bola-verde-esquerda.svg'
 import EfeitoVerdeDireito from '../assets/efeito-bola-verde-direita.svg'
 import ImagemDesktopSquad from '../assets/capa-como-contratar.svg'
+import ImagemMobileSquad from '../assets/o-que-fazemos-mobile.svg'
 import SliderComponent from '@/components/Slider';
 import { ArrowRight } from 'phosphor-react';
 import SliderMobileComponent from '@/components/SliderMobile';
@@ -283,6 +284,9 @@ export default function Home() {
             <div className={styles.imagemDesktop}>
               <Image src={ImagemDesktopSquad} alt='Imagem desktop' />
             </div>
+            {/* <div className={styles.imagemMobile}>
+              <Image src={ImagemMobileSquad} alt='Imagem desktop' />
+            </div> */}
             <div className={styles.contentText}>
               <div className={styles.contentTextHeader}>
                 <span>O que fazemos</span>

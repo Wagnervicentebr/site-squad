@@ -1,4 +1,4 @@
-.headerContainer{
+.headerContainerDesktop{
     width: 100%;
     align-items: center;
     background-color: transparent;
@@ -10,12 +10,10 @@
 }
 
 .gridContainer{
-    display: grid;
-    grid-template-columns: 5.5fr 4fr 5fr 14fr 5fr 4fr 5.5fr;
+    display: flex;
     align-items: center;
     height: 5.25rem;
-    position: absolute;
-    top: 0;
+    justify-content: space-between;
 }
 
 .container{
@@ -24,13 +22,15 @@
 
 .navbar ul{
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .navbar li{
         list-style: none;
         border: 3px solid transparent;
         z-index: 1;
+        width: 3.875rem;
+        height: 1.5625rem;
 
         font-family: Degular;
         font-size: 1em;
@@ -46,8 +46,16 @@
 }
 
 .navbar li:hover {
-    width: 3.875rem;
-    height: 1.5625rem;
+   
+    flex-shrink: 0;
+    border-radius: 2.375rem;
+    background: #FFF;
+    color: #000;
+}
+
+
+.navbar li:focus-visible {
+   
     flex-shrink: 0;
     border-radius: 2.375rem;
     background: #FFF;
@@ -78,4 +86,145 @@
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
+}
+
+.containerMobile {
+    display: none;
+}
+
+.containerLogoDesktop {
+    display: flex;
+}
+
+.headerContainerMobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+   .headerContainerDesktop {
+        display: none;
+   }
+
+   .headerContainerMobile {
+        display: block;
+    }
+    
+    .menu {
+        padding: 6% 10%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .logoMobileContainer {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        padding: 2%;
+        z-index: 998;
+    }
+
+    .menu .menuLines {
+        position: absolute;
+        z-index: 999;
+        width: 35px;
+        height: 35px;
+        top: 10%;
+    }
+
+
+    .menu .menuLines span{
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 10px;
+        background: #CDCDCD;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    .menuFakerTrigger {
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+
+    .menuFakerTrigger:checked~.menuLines span {
+        background-color: #02FF85;
+    }
+
+    .menuFakerTrigger:checked~.menuLines span:nth-child(1){
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) scale(1.25);
+    }
+
+    .menuFakerTrigger:checked~.menuLines span:nth-child(2){
+        opacity: 0;
+    }
+
+    .menuFakerTrigger:checked~.menuLines span:nth-child(3){
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scale(1.25);
+    }
+
+    .menu ul {
+        position: fixed;
+        z-index: 998;
+        left: 0;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        padding-top: 20%;
+        background: #2A3645;
+        margin-left: -70%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .menu .menuFakerTrigger:checked ~ ul {
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #F5F5F5;
+        font-family: Degular;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.375rem;
+    }
+
+    .menu ul li {
+        padding: 10px 30px;
+    }
+
+    .menu ul li a:hover {
+        color: #999;
+    }
+
+    .menu ul img {
+        margin: 0% 2% 0% 8%;
+        box-sizing: border-box;
+    }
+
+    .menu .menuLineDivision {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu .menuLineDivision div {
+        width: 80%;
+        height: 0.1rem;
+        background-color: #334150;
+    }
+
+
 }

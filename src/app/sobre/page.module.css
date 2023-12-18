@@ -289,7 +289,7 @@
 @media (max-width: 1024px) {
     .sobreContainer {
         height: 41.6875rem;
-        background: url('../../assets/capa-sobre-gif.gif') no-repeat;
+        background: url('../../assets/capa-sobre-mobile.gif') no-repeat;
         align-items: center;
         justify-content: space-around;
     }

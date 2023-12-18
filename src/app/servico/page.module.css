@@ -372,8 +372,10 @@
 
     .servicoContainer {
 
-        height: 60.6875rem;
-        background: url('../../assets/capa-membros-squad.svg') no-repeat;
+        height: 52.6875rem;
+        background: url('../../assets/capa-servico-mobile.svg') no-repeat;
+        background-size:contain;
+
     }
 
     .textContainer {
@@ -405,6 +407,7 @@
     .alocacaoContainer {
         flex-direction: column;
         height: 100%;
+        background: transparent;
     }
 
     .contentServico {
@@ -527,5 +530,13 @@
     .listaTecnologias img {
         width: 36px;
         height: 36px;
+    }
+}
+
+
+
+@media (min-width: 750px) {
+    .servicoContainer {
+        background: url('../../assets/capa-membros-squad.svg') no-repeat center/100%;
     }
 }
