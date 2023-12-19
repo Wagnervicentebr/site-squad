@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './page.module.css'
 import SetaDiagonal from '../../assets/seta-diagonal-servico.svg'
 import { ArrowLeft, ArrowRight, ArrowUp } from 'phosphor-react'
@@ -26,8 +26,49 @@ import iconMulesoft from '../../assets/tecnologias/mulesoft1.svg'
 import iconPhp from '../../assets/tecnologias/php.svg'
 import iconPyton from '../../assets/tecnologias/phyton.svg'
 import iconScrum from '../../assets/tecnologias/scrum.svg'
+import ImagemServico1 from '../../assets/capa-alocacao1.svg';
+import ImagemServico2 from '../../assets/capa-alocacao2.svg';
+import ImagemServico3 from '../../assets/capa-alocacao3.svg';
 
 const Servico = () => {
+  const [imagemServico, setImagemServico] = useState(ImagemServico1)
+  const [textServico, setTextServico] = useState('Alocação na sua empresa')
+  const [subTextServico, setSubTextServico] = useState('Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, na estrutura do cliente sob responsabilidade de seus próprios gestores ou nossos gestores.')
+  const [indexServico, setIndexServico] = useState(1)
+
+  function nextServico(index: number, action: string) {
+    const newIndex = action == 'next' ? index + 1 : index - 1;
+
+    switch (newIndex) {
+      case 1:
+        setImagemServico(ImagemServico1);
+        setTextServico('Alocação na sua empresa');
+        setSubTextServico('Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, na estrutura do cliente sob responsabilidade de seus próprios gestores ou nossos gestores.');
+        setIndexServico(newIndex);
+        break;
+      case 2:
+        setImagemServico(ImagemServico2);
+        setTextServico('Alocação remota');
+        setSubTextServico('Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, com colaboradores remotos totalmente assistidos e geridos por nós ou pelos gestores do cliente.');
+        setIndexServico(newIndex);
+        break;
+      case 3:
+        setImagemServico(ImagemServico3);
+        setTextServico('Desenvolvimento de projetos');
+        setSubTextServico('Num mercado tão dinâmico, tecnologia é vantagem competitiva. Conte com nossos experts para criar soluções personalizadas e desenvolver projetos sob medida, alinhados aos objetivos de sua empresa ou startup.');
+        setIndexServico(newIndex);
+        break;
+      default:
+        setImagemServico(ImagemServico1);
+        setTextServico('Alocação na sua empresa');
+        setSubTextServico('Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, na estrutura do cliente sob responsabilidade de seus próprios gestores ou nossos gestores.');
+        setIndexServico(1);
+        break;
+    }
+
+  }
+
+  
   return (
     <>
       <section className={styles.servicoContainer}>
@@ -44,6 +85,7 @@ const Servico = () => {
       </section>
 
       <section className={styles.alocacaoContainer}>
+        <Image src={imagemServico} alt='' />
         <div className={styles.textHeader}>
           <span>Serviços</span>
           <div className={styles.textLineHeader}></div>
@@ -52,25 +94,25 @@ const Servico = () => {
         <div className={styles.contentServico}>
           <div className={styles.contentDescription}>
             <div>
-              <span>Alocação na sua empresa</span>
+              <span>{textServico}</span>
             </div>
             <div className={styles.btnArrowGroup}>
-              <button className={styles.btnArrowGreenTransparent}>
+              <button className={styles.btnArrowGreenTransparent} onClick={() => nextServico(indexServico, 'prev')}>
                 <ArrowLeft size={24}/>
               </button>
-              <button className={styles.btnArrowGreen}>
+              <button className={styles.btnArrowGreen} onClick={() => nextServico(indexServico, 'next')}>
                 <ArrowRight size={24}/>
               </button>
             </div>
           </div>
           <div className={styles.contentSubDescription}>
-            <span>Alocação de profissionais de T.I. da Squad Premium, seja por período, projeto ou prazo indeterminado, na estrutura do cliente sob responsabilidade de seus próprios gestores ou nossos gestores.</span>
+            <span>{subTextServico}</span>
           </div>
           <div className={styles.btnArrowGroupMobile}>
-            <button className={styles.btnArrowGreenTransparent}>
-              <ArrowLeft size={24}/>
+            <button className={styles.btnArrowGreenTransparent} onClick={() => nextServico(indexServico, 'prev')}>
+              <ArrowLeft size={24} />
             </button>
-            <button className={styles.btnArrowGreen}>
+            <button className={styles.btnArrowGreen} onClick={() => nextServico(indexServico, 'next')}>
               <ArrowRight size={24}/>
             </button>
           </div>
