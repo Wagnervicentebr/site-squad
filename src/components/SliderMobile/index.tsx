@@ -5,6 +5,7 @@ import Slide1 from '../../assets/slider1.svg'
 import Slide2 from '../../assets/slider2.svg'
 import Slide3 from '../../assets/slider3.svg'
 import { ArrowRight } from 'phosphor-react';
+import Link from 'next/link';
 
 
 
@@ -34,28 +35,19 @@ const SliderMobileComponent = () => {
 
   return (
     <div className={styles.sliderContainer}>
-      <div className={styles.SliderRow}>
-        <div className={styles.slider}>
-            <Image src={slideSelected} alt=''/>
-            <div className={styles.contentText}>
-                <span>{slideContent}</span>
-            </div>
+      <Link href={{
+              pathname: '/blogContent',
+              query: { id: 1 },
+            }}>
+        <div className={styles.SliderRow}>
+          <div className={styles.slider}>
+              <Image src={slideSelected} alt=''/>
+              <div className={styles.contentText}>
+                  <span>{slideContent}</span>
+              </div>
+          </div>
         </div>
-
-        {/* <div className={styles.slider}>
-            <Image src={Slide2} alt=''/>
-            <div className={styles.contentText}>
-                <span>Quais as novas funcionalidades do google analytics 4?</span>
-            </div>
-        </div>
-
-        <div className={styles.slider}>
-            <Image src={Slide3} alt=''/>
-            <div className={styles.contentText}>
-                <span>Quais as novas funcionalidades do google analytics 4?</span>
-            </div>
-        </div> */}
-      </div>
+      </Link>
       <div className={styles.SliderRow}>
         <div className={styles.sliderCount}>
             <button onClick={() => handdleChangeContent(1)}>1</button>
