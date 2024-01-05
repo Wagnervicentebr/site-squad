@@ -11,6 +11,7 @@ import InstaIcon from '../../assets/instagram-negative.svg'
 import LinkedInIcon from '../../assets/linkedIn-negative.svg'
 import YoutubeIcon from '../../assets/youTube-negative.svg'
 import GitIcon from '../../assets/github-negative.svg'
+import Topo from '../../assets/voltar-topo.svg'
 
 const Footer = () => {
   return (
@@ -81,7 +82,7 @@ const Footer = () => {
                             <p className={style.title}>Políticas</p>
                             <ul className={style.textdecoration}>
                                 <li>Política de Privacidade</li>
-                                <li>Código de Ética e Conduto</li>
+                                <li>Código de Ética e Conduta</li>
                                 <li>Segurança</li>
                             </ul>
                         </div>
@@ -112,6 +113,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className={style.gridpartTopo}>
+                        <Image onClick={() =>  window.scroll(0, 0)} src={Topo} alt='' />
                     </div>
                 </div>
                 </div>

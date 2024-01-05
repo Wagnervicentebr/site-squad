@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div>
               <div className={styles.contentPrincipal}>
-                <span>Acreditamos que a <span className={styles.textResultados}>os resultados</span> falam mais alto que tudo.</span>
+                <span>Acreditamos que <span className={styles.textResultados}>os resultados</span> falam mais alto que tudo.</span>
               </div>
               <div className={styles.subContent}>
                 <span>Nossos clientes confiam em nós para promover a transformação necessária dentro e fora dos seus territórios. Nossa missão é sempre conectar o que há de melhor em tecnologia com os objetivos das empresas que apoiamos.</span>
@@ -149,7 +149,7 @@ export default function Home() {
                   <div className={styles.textContentInfos}>
                     <span className={styles.textPrincipalInfos}>70+</span>
                     <span>Clientes</span>
-                    <span>Satifeitos</span>
+                    <span>Satisfeito</span>
                   </div>
                 </div>
               </div>
@@ -292,7 +292,7 @@ export default function Home() {
                 <span>O que fazemos</span>
               </div>
               <div className={styles.contentTextSubtitle}>
-                <span>Da primeira linha de código ao projeto mais complexo já imaginado: Cobrimos missões tecnológicas com eficiência e personalização incomparáveis.</span>
+                <span>Da primeira linha de código ao projeto mais complexo já imaginado: <strong>Cobrimos missões tecnológicas com eficiência e personalização incomparáveis.</strong></span>
               </div>
             </div>
           </div>

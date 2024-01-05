@@ -55,8 +55,9 @@ const SliderComponent = () => {
             <button>2</button>
             <button>3</button>
             <button>4</button>
+            <div className={styles.proximo}>...</div>
             <button>
-                Proximo
+                Próxima
                 <ArrowRight size={24} />
             </button>
         </div>

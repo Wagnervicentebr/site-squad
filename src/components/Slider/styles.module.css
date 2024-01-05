@@ -94,3 +94,11 @@
     gap: 0.5rem;
 }
 
+.proximo {
+    color: #FFF;
+    font-family: Degular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
