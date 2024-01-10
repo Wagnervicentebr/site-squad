@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
                 <div className={style.container}></div>
                 <div className={style.container}>
-                    <button className={style.button}><a href='/contato'>Entrar em Contato</a></button>
+                    <button className={style.button}><Link href='/contato'>Entrar em Contato</Link></button>
                 </div>
                 <div className={style.container}></div>
             </div>

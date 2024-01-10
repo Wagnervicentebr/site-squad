@@ -4,9 +4,9 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import { Envelope, Phone } from 'phosphor-react'
 
-import ImagemLocalizacao from '../../assets/localizacao-verde.png'
-import ImagemEndereco from '../../assets/endereco-squad.png'
-import IconWhatsGreen from '../../assets/icon-whats-verde.png'
+import ImagemLocalizacao from '../../assets/localizacao-verde.svg'
+import ImagemEndereco from '../../assets/endereco-squad.svg'
+import IconWhatsGreen from '../../assets/icon-whats-verde.svg'
 import ImgSquadRedendo from '../../assets/icon-squad-redondo.svg'
 import ImgEfeitoVerdeRight from '../../assets/efeito-bola-verde-direita.svg'
 
